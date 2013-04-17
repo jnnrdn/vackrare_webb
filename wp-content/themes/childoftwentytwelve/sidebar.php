@@ -12,6 +12,22 @@
 
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
+
+      <aside id="social-icons" class"widget clear">
+        <h3 class="widget-title">Connect with us</h3>
+        <ul>
+          <li class="social-twitter">
+            <a href="#" title="Follow me on Twitter" target="_blank">Follow me on Twitter</a>
+          </li>
+          <li class="social-facebook">
+            <a href="#" title="Follow me on Facebook" target="_blank">Follow me on Facebook</a>
+          </li>
+          <li class="social-linkedin">
+            <a href="#" title="Follow me on LinkedIn" target="_blank">Follow me on LinkedIn</a>
+          </li>
+        </ul>
+      </aside>
+
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div><!-- #secondary -->
 	<?php endif; ?>
