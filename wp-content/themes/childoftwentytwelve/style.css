@@ -15,6 +15,35 @@ body.custom-font-enabled {
   font-family: Georgia, serif;
 }
 
+/* SOCIAL ICONS IN SIDEBAR*/
+#social-icons li {
+
+}
+#social-icons a:link,
+#social-icons a:hover,
+#social-icons a:visited {
+  display: block;
+  float: left;
+  text-indent: -9999px;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 10px 0;
+
+}
+
+.social-twitter a {
+  background: url('images/twitter-32') no-repeat;
+}
+.social-facebook a {
+  background: url('images/facebook-32') no-repeat;
+}
+.social-linkedin a {
+  background: url('images/linkedin-32') no-repeat;
+}
+.social-aboutme a {
+  background: url('images/aboutme-32') no-repeat;
+}
+
 /* PAGINATION */
 
 .paginationBox {
