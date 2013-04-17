@@ -32,16 +32,19 @@ body.custom-font-enabled {
 }
 
 .social-twitter a {
-  background: url('images/twitter-32') no-repeat;
+  background: #39a9e0 url('images/twitter-32.png') no-repeat;
 }
 .social-facebook a {
-  background: url('images/facebook-32') no-repeat;
+  background: #3b5998 url('images/facebook-32.png') no-repeat;
 }
 .social-linkedin a {
-  background: url('images/linkedin-32') no-repeat;
+  background: #007fb1 url('images/linkedin-32.png') no-repeat;
 }
 .social-aboutme a {
-  background: url('images/aboutme-32') no-repeat;
+  background: #00405d url('images/aboutme-32.png') no-repeat;
+}
+.social-github a {
+  background: #4183c4 url('images/github-32.png') no-repeat;
 }
 
 /* PAGINATION */

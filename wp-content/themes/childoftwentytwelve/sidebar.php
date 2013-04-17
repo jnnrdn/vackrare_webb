@@ -26,10 +26,10 @@
             <a href="#" title="Follow me on LinkedIn" target="_blank">Follow me on LinkedIn</a>
           </li>
           <li class="social-aboutme">
-            <a href="#" title="Follow me on Aboutme" target="_blank">Follow me on About.me</a>
+            <a href="#" title="See my page on Aboutme" target="_blank">See my page on About.me</a>
           </li>
           <li class="social-github">
-            <a href="#" title="See my stuff on GitHub" target="_blank">See my stuff on GitHub</a>
+            <a href="#" title="Find my stuff on GitHub" target="_blank">Find my stuff on GitHub</a>
           </li>
         </ul>
       </aside>
