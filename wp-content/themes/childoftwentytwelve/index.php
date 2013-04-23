@@ -16,7 +16,11 @@
 
 get_header(); ?>
 
-	<?php get_template_part( 'welcome' ) ?>
+	<?php
+		if ( is_front_page() && !is_paged() ) :
+				get_template_part( 'welcome' );
+		endif;
+	?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
