@@ -97,3 +97,20 @@ ul.pagination {
 }
 
 /* END PAGINATION */
+
+#front-page-intro {
+  border-bottom: 1px #EDEDED solid;
+  padding: 24px 0 48px;
+  padding: 1.714285714rem 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.714285714rem 0;
+}
+#intro-elements {
+  float: left;
+  width: 47.916666667%;
+}
+#intro-text p {
+  margin: 0 0 24px;
+  margin: 0 0 1.714285714rem;
+  line-height: 1.714285714rem;
+}
