@@ -5,9 +5,9 @@
 <div id="front-page-intro" class="clear">
   <?php if ( get_the_post_thumbnail($page->ID) ) : ?>
 
-    <figure>
+    <figure class="entry-page-image">
       <?php echo get_the_post_thumbnail($page->ID); ?>
-    </figure>
+    </figure> <!-- .entry-page-image -->
 
   <?php endif ?>
 
