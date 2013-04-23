@@ -8,7 +8,7 @@
 
     <div class="entry-content">
 
-      <?php echo $page->post_content; ?>
+      <?php echo apply_filters( 'the_content', $page->post_content ); ?>
 
     </div> <!-- .entry-content -->
 
