@@ -1,9 +1,15 @@
 <!-- Welcome message to be displayed on the front index page -->
 
 <?php $page = get_page_by_title( 'Front page' ); ?>
-<?php print_r($page); ?>
 
 <div id="front-page-intro" class="clear">
+  <?php if ( get_the_post_thumbnail($page->ID) ) : ?>
+
+    <figure>
+      <?php echo get_the_post_thumbnail($page->ID); ?>
+    </figure>
+
+  <?php endif ?>
 
   <article id="intro-elements">
 
