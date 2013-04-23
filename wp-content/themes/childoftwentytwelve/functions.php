@@ -1,6 +1,14 @@
 <?php
 /* Functions of the Child of Twenty Twelve theme */
 
+function mytheme_dequeue_fonts() {
+  // wp_dequeue_style( 'twentytwelve-fonts' );
+
+  wp_enqueue_style( 'ArchivoNarrow', 'http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' );
+}
+
+add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
+
 function mychildtheme_setup() {
 
   // This theme uses wp_nav_menu() in one location.
@@ -16,6 +24,8 @@ function mychildtheme_setup() {
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>',
   ) );
+
+  add_image_size( 'category-thumb', 100, 100, true );
 }
 
 add_action( 'after_setup_theme', 'mychildtheme_setup', 11 );
@@ -32,24 +42,22 @@ function twentytwelve_content_nav() {
   $range = 3;
 
 
-  $showitems = ($range) + 1;
+  $showitems = ( $range ) + 1;
 
   global $paged;
-  if(empty($paged)) $paged = 1;
+  if ( empty( $paged ) ) $paged = 1;
 
-  if($pages == '')
-  {
+  if ( $pages == '' ) {
     global $wp_query;
     $pages = $wp_query->max_num_pages;
-    if(!$pages)
-    {
+    if ( !$pages ) {
       $pages = 1;
     }
   }
 
   if ( 1 != $pages ) {
     echo '<ul class="pagination">';
-    if ( $paged > 2 && $paged > $range+1 && $showitems < $pages )
+    if ( $paged > 2 && $paged > $range + 1 && $showitems < $pages )
       echo '<li><a href="'.get_pagenum_link(1).'">&laquo;</a></li>';
     if ( $paged > 1 && $showitems < $pages) echo '<li>' .
         previous_posts_link( '&laquo; Previous' ) . '</li>';

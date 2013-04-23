@@ -53,6 +53,15 @@
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() || is_archive() || is_category() || is_tag() ) : // Only display Excerpts for Search ?>
+
+		<?php
+			if ( has_post_thumbnail() ) :
+				echo '<figure class="cat-thumb">';
+				the_post_thumbnail( 'category-thumb' );
+				echo '</figure>';
+			endif;
+		?>
+
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->

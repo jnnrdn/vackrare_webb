@@ -10,12 +10,15 @@ Template: twentytwelve
 
 body {
   background-color: teal;
-}
-body.custom-font-enabled {
-  font-family: Georgia, serif;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
-/* SOCIAL ICONS IN SIDEBAR*/
+.cat-thumb {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+/* SOCIAL ICONS IN SIDEBAR */
 #social-icons li {
 
 }
