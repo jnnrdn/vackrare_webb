@@ -18,6 +18,31 @@ body {
   margin: 0 10px 10px 0;
 }
 
+#front-page-intro {
+  border-bottom: 1px #EDEDED solid;
+  padding: 24px 0 48px;
+  padding: 1.714285714rem 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.714285714rem 0;
+}
+#intro-elements {
+  float: left;
+  width: 47.916666667%;
+}
+#intro-text p {
+  margin: 0 0 24px;
+  margin: 0 0 1.714285714rem;
+  line-height: 1.714285714rem;
+}
+/* Minimum width of 600 pixels */
+@media screen and (max-width: 600px) {
+  #intro-elements {
+    float: none;
+    width: 100%;
+  }
+}
+
+
 /* SOCIAL ICONS IN SIDEBAR */
 #social-icons li {
 
@@ -97,20 +122,3 @@ ul.pagination {
 }
 
 /* END PAGINATION */
-
-#front-page-intro {
-  border-bottom: 1px #EDEDED solid;
-  padding: 24px 0 48px;
-  padding: 1.714285714rem 0;
-  margin-bottom: 24px;
-  margin-bottom: 1.714285714rem 0;
-}
-#intro-elements {
-  float: left;
-  width: 47.916666667%;
-}
-#intro-text p {
-  margin: 0 0 24px;
-  margin: 0 0 1.714285714rem;
-  line-height: 1.714285714rem;
-}
