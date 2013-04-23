@@ -42,7 +42,24 @@ body {
   }
 }
 
-
+.hide-button {
+  float: right;
+  margin: -20px 10px 0 0;
+}
+.hide-button a {
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 3px 20px;
+  border-top: 1px #fff solid;
+  border-right: 1px #ededed solid;
+  border-bottom: 1px #ededed solid;
+  border-left: 1px #ededed solid;
+}
+.hide-button a:hover {
+  color: #000;
+}
 /* SOCIAL ICONS IN SIDEBAR */
 #social-icons li {
 
