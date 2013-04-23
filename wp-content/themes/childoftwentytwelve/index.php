@@ -16,6 +16,8 @@
 
 get_header(); ?>
 
+	<?php get_template_part( 'welcome' ) ?>
+
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 		<?php if ( have_posts() ) : ?>
