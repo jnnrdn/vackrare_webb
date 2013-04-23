@@ -1,12 +1,14 @@
 <!-- Welcome message to be displayed on the front index page -->
 
+<?php $page = get_page_by_title( 'Front page' ); ?>
+
 <div id="front-page-intro" class="clear">
 
   <article id="intro-elements">
 
     <div class="entry-content">
 
-      <p>This is the text that is displayed by the welcome.php-file.</p>
+      <?php print_r($page); ?>
 
     </div> <!-- .entry-content -->
 
