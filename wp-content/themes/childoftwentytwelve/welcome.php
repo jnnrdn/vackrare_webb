@@ -1,6 +1,7 @@
 <!-- Welcome message to be displayed on the front index page -->
 
 <?php $page = get_page_by_title( 'Front page' ); ?>
+<?php print_r($page); ?>
 
 <div id="front-page-intro" class="clear">
 
