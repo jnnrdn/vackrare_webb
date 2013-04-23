@@ -8,7 +8,7 @@
 
     <div class="entry-content">
 
-      <?php print_r($page); ?>
+      <?php echo $page->post_content; ?>
 
     </div> <!-- .entry-content -->
 
