@@ -78,4 +78,19 @@ function twentytwelve_content_nav() {
 
 // END pagination
 
+// Adds a hide feature for the welcome message
+add_action( 'init', 'ChildOfTwentyTwelve_hideMeta');
+
+function ChildOfTwentyTwelve_hideMeta() {
+  if (!is_admin()) {
+
+    // Register your script location, dependencies and version
+    wp_register_script( 'hide',
+                get_stylesheet_directory_uri() . '/js/hide.js',
+                array('jquery') );
+
+    // Enqueue the script
+    wp_enqueue_script('hide');
+  }
+}
 ?>
