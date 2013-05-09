@@ -5,7 +5,8 @@
 remove_action('wp_head', 'wp_generator');
 
 function mytheme_dequeue_fonts() {
-
+  wp_dequeue_style( 'twentytwelve-fonts' );
+  wp_enqueue_style( 'Quicksand', 'http://fonts.googleapis.com/css?family=Quicksand' );
   wp_enqueue_style( 'Oleo Script Swash Caps', 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' );
 }
 
