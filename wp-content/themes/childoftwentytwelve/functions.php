@@ -1,10 +1,12 @@
 <?php
 /* Functions of the Child of Twenty Twelve theme */
 
-function mytheme_dequeue_fonts() {
-  // wp_dequeue_style( 'twentytwelve-fonts' );
+// Remove the wordpress version number in header, http://digwp.com/2009/07/remove-wordpress-version-number/
+remove_action('wp_head', 'wp_generator');
 
-  wp_enqueue_style( 'ArchivoNarrow', 'http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' );
+function mytheme_dequeue_fonts() {
+
+  wp_enqueue_style( 'Oleo Script Swash Caps', 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' );
 }
 
 add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
