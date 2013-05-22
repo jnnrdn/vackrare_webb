@@ -8,10 +8,10 @@ Template: twentytwelve
 
 @import url('../twentytwelve/style.css');
 
+/* GENERAL ------------------------------------------------------------------ */
+
 body {
-  background-color: #464646;
-  font-weight: bold;
-  font-family: Quicksand, sans-serif;
+  background: #98B6B8 url('images/3dppgwq.png') fixed;
 }
 body .site {
     box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
@@ -28,24 +28,20 @@ h1, h2, h3, h4 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 .site-header {
-  padding: 0 40px;
-  background: #98B6B8 url('images/3dppgwq.png') fixed;
-  -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  /*
-  background: -moz-linear-gradient(-90deg,#BED0D1,#709DA1);
-  background: -webkit-gradient(linear, left top, left bottom, from(#BED0D1), to(#709DA1));*/
+
 }
 h1.site-title a {
   font-size: 3em;
   color: #709DA1;
-  font-family: Quicksand, sans-serif;
-  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(270,270,270,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+  font-weight: normal;
+  font-family: damion, sans-serif;
+
 }
 .site-header h1 a:hover, .site-header h2 a:hover {
   color: #7BA7AB;
-  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+h2.site-description {
+  font-size: 19px;
 }
 .cat-thumb {
   float: left;
@@ -93,7 +89,10 @@ h1.site-title a {
 .hide-button a:hover {
   color: #000;
 }
-/* SOCIAL ICONS IN SIDEBAR */
+
+
+/* SOCIAL ICONS IN SIDEBAR -------------------------------------------------- */
+
 #social-icons li {
 
 }
@@ -125,7 +124,7 @@ h1.site-title a {
   background: #4183c4 url('images/github-32.png') no-repeat;
 }
 
-/* PAGINATION */
+/* PAGINATION --------------------------------------------------------------- */
 
 .paginationBox {
   clear: both;
