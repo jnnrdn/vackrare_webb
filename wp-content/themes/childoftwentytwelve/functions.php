@@ -8,7 +8,7 @@ function mytheme_dequeue_fonts() {
   //wp_dequeue_style( 'twentytwelve-fonts' );
   wp_enqueue_script( 'Damion', 'http://use.edgefonts.net/damion:n4:all;meddon.js' );
   wp_enqueue_style( 'Source Sans Pro', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' );
-  wp_enqueue_style( 'Merriweather' , 'http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,900,900italic' );
+  wp_enqueue_style( 'Yanone' , 'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' );
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
 

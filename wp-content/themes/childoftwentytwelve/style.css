@@ -23,11 +23,10 @@ body .site {
   margin-top: 0rem;
 }
 h1, h2, h3, h4 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .entry-header .entry-title {
-  font-weight: 900;
-  font-style: italic;
+  font-size: 30px;
 }
 #page {
   color: #464646;
