@@ -1,7 +1,7 @@
 /*
 Theme Name: Child of Twenty Twelve
 Description: Cool child theme based on Twenty Twelve
-Author: Jenny Ryden
+Author: Jenny Ryd&eacute;n
 Version: 0.0.1
 Template: twentytwelve
 */
@@ -13,13 +13,21 @@ Template: twentytwelve
 body {
   background: #98B6B8 url('images/3dppgwq.png') fixed;
 }
+body.custom-font-enabled {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 body .site {
-    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-    margin-bottom: 0rem;
-    margin-top: 0rem;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 h1, h2, h3, h4 {
-
+  font-family: 'Merriweather', serif;
+}
+.entry-header .entry-title {
+  font-weight: 900;
+  font-style: italic;
 }
 #page {
   color: #464646;
@@ -27,6 +35,9 @@ h1, h2, h3, h4 {
   -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
+
+/* HEADER ------------------------------------------------------------------- */
+
 .site-header {
 
 }
@@ -47,6 +58,10 @@ h2.site-description {
   float: left;
   margin: 0 10px 10px 0;
 }
+
+
+/* FRONT PAGE INTRO --------------------------------------------------------- */
+
 #front-page-intro {
   border-bottom: 1px #EDEDED solid;
   padding: 24px 0 48px;

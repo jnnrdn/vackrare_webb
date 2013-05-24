@@ -7,9 +7,8 @@ remove_action('wp_head', 'wp_generator');
 function mytheme_dequeue_fonts() {
   //wp_dequeue_style( 'twentytwelve-fonts' );
   wp_enqueue_script( 'Damion', 'http://use.edgefonts.net/damion:n4:all;meddon.js' );
-  wp_enqueue_style( 'Quicksand', 'http://fonts.googleapis.com/css?family=Quicksand' );
-  wp_enqueue_style( 'Days One' , 'http://fonts.googleapis.com/css?family=Days+One' );
-  wp_enqueue_style( 'Oleo Script Swash Caps', 'http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' );
+  wp_enqueue_style( 'Source Sans Pro', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic' );
+  wp_enqueue_style( 'Merriweather' , 'http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,900,900italic' );
 }
 add_action( 'wp_enqueue_scripts', 'mytheme_dequeue_fonts', 11 );
 
